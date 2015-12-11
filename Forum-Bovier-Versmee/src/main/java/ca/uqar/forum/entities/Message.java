@@ -1,5 +1,6 @@
 package ca.uqar.forum.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -16,8 +17,13 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name="message")
-public class Message
+public class Message implements Serializable
 {	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5903158936244556885L;
+
 	/*
 	###############################
 	#                             #

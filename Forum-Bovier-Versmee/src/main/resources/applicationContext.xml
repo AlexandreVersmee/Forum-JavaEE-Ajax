@@ -78,9 +78,10 @@
 		</property>
 	</bean>
 
-
+    
 
 	<!-- New try annotaion (http://www.developer.com/java/web/use-the-spring-3-formatter-spi-for-custom-formatting.html) -->
+	<context:component-scan base-package="ca.uqar.forum.controller" />
 	<mvc:annotation-driven />
 
 

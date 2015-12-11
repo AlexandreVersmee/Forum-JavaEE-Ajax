@@ -1,5 +1,6 @@
 package ca.uqar.forum.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -14,8 +15,13 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name="membre")
-public class Membre
+public class Membre implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5698023740507511226L;
+
 	/*
 	###############################
 	#                             #

@@ -1,5 +1,6 @@
 package ca.uqar.forum.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Set;
 
@@ -15,8 +16,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="sujet")
-public class Sujet
+public class Sujet implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2965783367120703686L;
+
 	/*
 	###############################
 	#                             #

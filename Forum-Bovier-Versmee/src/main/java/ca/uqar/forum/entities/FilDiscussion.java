@@ -1,5 +1,6 @@
 package ca.uqar.forum.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Set;
 
@@ -12,14 +13,18 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="fildiscussion")
-public class FilDiscussion 
+public class FilDiscussion implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1567742847078866618L;
+
 	/*
 	###############################
 	#                             #

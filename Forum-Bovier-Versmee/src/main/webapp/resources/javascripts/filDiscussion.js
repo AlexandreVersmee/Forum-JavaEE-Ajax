@@ -18,7 +18,6 @@ $('.hideEdit').on("click", function(){
 var url = window.location.href;
 var id = url.substring(window.location.href.lastIndexOf('/') + 1);
 var ret = url.match("message");
-console.log("ret = "+ret);
 if (id > 0 && ret != null)
 {
 	$('#edit-row'+id).toggle();
